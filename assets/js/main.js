@@ -37,8 +37,8 @@ modal_store_open_cross.addEventListener('click', function () {
     }, 1000);
 });
 
-/// ドロップダウンメニュー制御 ///
 
+/// ドロップダウンメニュー制御 ///
 // 上のメニューの開閉
 accordion_trigger.addEventListener('click', function () {
     accordion_top.classList.toggle('open');

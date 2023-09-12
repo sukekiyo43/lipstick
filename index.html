@@ -14,31 +14,31 @@
 </head>
 
 <body id="body">
-    <header id="header">
-        <div class="header_mv">
-            <div class="header_mv-pc-box">
-                <img class="header_mv_pc1" src="./assets/img/pc/mv1.jpg" alt="メインビジュアル">
-                <img class="header_mv_pc2" src="./assets/img/pc/mv2.jpg" alt="メインビジュアル">
-                <img class="header_mv_pc3" src="./assets/img/pc/mv3.jpg" alt="メインビジュアル">
+    <header id="header" class="header">
+        <div class="header__mv">
+            <div class="header__mv-box">
+                <img class="header__mv1" src="./assets/img/mv1.jpg" alt="メインビジュアル">
+                <img class="header__mv2" src="./assets/img/mv2.jpg" alt="メインビジュアル">
+                <img class="header__mv3" src="./assets/img/mv3.jpg" alt="メインビジュアル">
             </div>
         </div>
 
-        <div class="header_inner">
-            <div class="header_logo_box">
-                <h1 class="logo">
-                    <a href="./index.html"><img src="./assets/img/pc/logo.svg" alt="ロゴ"></a>
+        <div class="header__inner">
+            <div class="header__logo-box">
+                <h1 class="header__logo">
+                    <a href="./index.html"><img src="./assets/img/logo.svg" alt="ロゴ"></a>
                 </h1>
                 <div class="swiper-container-parent">
                     <div id="header_swiper" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./assets/img/pc/mv-slide1.png" alt="メインビジュアルスライド1">
+                                <img src="./assets/img/mv-slide1.jpg" alt="メインビジュアルスライド1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/pc/mv-slide2.png" alt="メインビジュアルスライド2">
+                                <img src="./assets/img/mv-slide2.jpg" alt="メインビジュアルスライド2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/pc/mv-slide3.png" alt="メインビジュアルスライド3">
+                                <img src="./assets/img/mv-slide3.jpg" alt="メインビジュアルスライド3">
                             </div>
                         </div>
                     </div>
@@ -47,9 +47,9 @@
             </div>
         </div>
 
-        <div class="header_title_container" data-aos="fade">
-            <div class="header_title_box">
-                <div class="header_title_inner">
+        <div class="header__title-container" data-aos="fade">
+            <div class="header__title-box">
+                <div class="header__title-inner">
                     <h2>輝く唇を手に入れる</h2>
                     <p>
                         S.Lips は、唇のことを考え<br>
@@ -63,59 +63,63 @@
                 </div>
             </div>
         </div>
-
     </header>
 
-    <main>
-        <section class="section_kv">
-            <div class="kv">
-                <img class="kv_pc" src="./assets/img/pc/bg.jpg" alt="キービジュアルＰＣ">
+    <main class="main">
+        <section class="kv">
+            <div class="kv__img-box">
+                <img class="kv__img" src="./assets/img/bg.jpg" alt="キービジュアルＰＣ">
             </div>
         </section>
 
         <!-- トップに戻る→ -->
-        <div id="return_circle" class="return_circle" data-aos="fade-up" data-aos-offset="600" data-aos-once="false"><a
+        <div id="return_circle" class="return-circle" data-aos="fade-up" data-aos-offset="600" data-aos-once="false"><a
                 href="#header"></a>
         </div>
 
-        <section class="section_natural">
-            <div class="natural_title" data-aos="fade-right">
-                <h2 class="natural_title_top">天然素材で</h2>
-                <h2>潤いと輝きを</h2>
+        <section class="natural">
+            <div class="natural__title" data-aos="fade-right">
+                <h2>
+                    <span>天然素材で</span>
+                    <span>潤いと輝きを</span>
+                </h2>
             </div>
-            <div class="natural_img">
-                <img class="natural_img_pc" src="./assets/img/pc/natural.jpg" alt="天然素材の画像ＰＣ">
-                <div class="hundred_img" data-aos="fade">
-                    <img src="./assets/img/pc/hundred.svg" alt="天然素材１００％の画像ＰＣ">
+            <div class="natural__img-box">
+                <img class="natural__img-pc" src="./assets/img/natural.jpg" alt="天然素材の画像ＰＣ">
+                <div class="natural__img-hundred" data-aos="fade">
+                    <img src="./assets/img/hundred.svg" alt="天然素材１００％の画像ＰＣ">
                 </div>
-                <div class="manual_img" data-aos="fade"><img src="./assets/img/pc/manual-work.svg" alt="手作業へのこだわりの画像">
+                <div class="natural__img-manual" data-aos="fade"><img src="./assets/img/manual-work.svg"
+                        alt="手作業へのこだわりの画像">
                 </div>
-                <div class="transparent_img" data-aos="fade">
-                    <img src="./assets/img/pc/transparent.svg" alt="潤いと透明感の画像">
-                </div>
-            </div>
-        </section>
-
-        <section class="section_color">
-            <div class="color_title" data-aos="fade-left">
-                <h2 class="color_title_top">選べる</h2>
-                <h2 class="color_title_bottom">カラーバリエーション</h2>
-            </div>
-            <div class="color_img">
-                <img class="color_img_pc" src="./assets/img/pc/color.jpg" alt="カラーバリエーションの画像ＰＣ">
-                <div class="december_img" data-aos="fade">
-                    <img src="./assets/img/pc/June.svg" alt="１２月発売の画像">
-                </div>
-                <div class="three-colors_img" data-aos="fade"><img src="./assets/img/pc/Three-colors.svg" alt="全３色の画像">
-                </div>
-                <div class="exclusive_img" data-aos="fade">
-                    <img src="./assets/img/pc/exclusive.svg" alt="限定キャンペーンの画像">
+                <div class="natural__img-transparent" data-aos="fade">
+                    <img src="./assets/img/transparent.svg" alt="潤いと透明感の画像">
                 </div>
             </div>
         </section>
 
-        <section class="section_variations">
-            <div class="section_title" data-aos="fade-up">
+        <section class="color">
+            <div class="color__title" data-aos="fade-left">
+                <h2>
+                    <span>選べる</span>
+                    <span>カラーバリエーション</span>
+                </h2>
+            </div>
+            <div class="color__img-box">
+                <img class="color__img-pc" src="./assets/img/color.jpg" alt="カラーバリエーションの画像ＰＣ">
+                <div class="color__img-december" data-aos="fade">
+                    <img src="./assets/img/June.svg" alt="１２月発売の画像">
+                </div>
+                <div class="color__img-three" data-aos="fade"><img src="./assets/img/Three-colors.svg" alt="全３色の画像">
+                </div>
+                <div class="color__img-exclusive" data-aos="fade">
+                    <img src="./assets/img/exclusive.svg" alt="限定キャンペーンの画像">
+                </div>
+            </div>
+        </section>
+
+        <section class="variations">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Color variations</h2>
                 <p>あなたはどのカラーを選ぶ？</p>
             </div>
@@ -123,166 +127,170 @@
             <div class="swiper-container-parent" data-aos="fade-up">
                 <div id="variations_swiper" class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="variations_img_box swiper-slide">
-                            <div class="variations_img">
-                                <img src="./assets/img/pc/variations1.png" alt="左の白い石鹸">
+                        <div class="variations__img-box swiper-slide">
+                            <div class="variations__img">
+                                <img src="./assets/img/variations1.jpg" alt="右の茶色の口紅">
                             </div>
                         </div>
-                        <div class="variations_img_box swiper-slide">
-                            <div class="variations_img">
-                                <img src="./assets/img/pc/variations2.png" alt="中央のピンクの石鹸">
+                        <div class="variations__img-box swiper-slide">
+                            <div class="variations__img">
+                                <img src="./assets/img/variations2.jpg" alt="中央の赤い口紅">
                             </div>
                         </div>
-                        <div class="variations_img_box swiper-slide">
-                            <div class="variations_img">
-                                <img src="./assets/img/pc/variations3.png" alt="右の黒い石鹸">
+                        <div class="variations__img-box swiper-slide">
+                            <div class="variations__img">
+                                <img src="./assets/img/variations3.jpg" alt="左の紫の口紅">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="variations" class="swiper-pagination_variations"></div>
+                <div id="variations" class="swiper-pagination-variations"></div>
             </div>
 
-            <div class="explanation_box" data-aos="fade">
-                <div class="explanation_img"><img src="./assets/img/pc/trinity.png" alt="商品画像">
+            <div class="explanation" data-aos="fade">
+                <div class="explanation__img">
+                    <img src="./assets/img/trinity.jpg" alt="商品画像">
                 </div>
-                <div class="explanation">
-                    <div class="explanation_inner">
-                        <h2>S.LIPS TRINITY</h2>
-                        <p>S.LIPSシリーズ、カラー3色のセット。その日の気分に合わせ、お好みのカラーをお選びいただけます。</p>
-
-                        <div class="explanation_text">
+                <div class="explanation__body">
+                    <div class="item-inner">
+                        <h2>
+                            S.LIPS TRINITY
+                        </h2>
+                        <p>
+                            S.LIPSシリーズ、カラー3色のセット。その日の気分に合わせ、お好みのカラーをお選びいただけます。
+                        </p>
+                        <div class="item-text">
                             <h3>【セット内容】</h3>
-                            <div class="explanation_text_inner">
+                            <div class="item-text-list">
                                 <ul>
                                     <li>・S.LIPS SHINE</li>
                                     <li>・S.LIPS NATURE</li>
                                     <li>・S.LIPS MOIST</li>
                                 </ul>
-                                <button class="explanation_button"><span>オンラインストアを見る</span></button>
+                                <button class="item-button"><span>オンラインストアを見る</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button id="modal_open" class="handling_stores_button" data-aos="fade">
+            <button id="modal_open" class="handling-stores-button" data-aos="fade">
                 <span>取扱い店舗を見る</span>
-                <div class="handling_stores_button_cross" id="modal_open_cross"></div>
+                <div class="handling-stores-button__cross" id="modal_open_cross"></div>
             </button>
 
-            <section class="section_modal_store" id="modal_store">
-                <div class="section_modal_store_inner">
-                    <div class="modal_container">
-                        <div id="modal_store_open_cross" class="modal_store_cross"></div>
-                        <div class="modal_store_inner">
-                            <h2 class="modal_store_title">取扱い店舗一覧</h2>
-                            <div class="modal_store">
+            <section class="modal" id="modal_store">
+                <div class="modal__inner">
+                    <div class="modal__store-container">
+                        <div id="modal_store_open_cross" class="modal__cross"></div>
+                        <div class="modal__store-inner">
+                            <h2 class="modal__store-title">取扱い店舗一覧</h2>
+                            <div class="modal__store">
                                 <ul>
                                     <li>東京</li>
-                                    <li>店舗名が入ります</li>
+                                    <li>東京本店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             東京都○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>銀座店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             東京都○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>八王子店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             東京都○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="modal_store">
+                            <div class="modal__store">
                                 <ul>
                                     <li>大阪</li>
-                                    <li>店舗名が入ります</li>
+                                    <li>梅田店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             大阪府○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>堺店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             大阪府○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="modal_store">
+                            <div class="modal__store">
                                 <ul>
                                     <li>愛知県</li>
-                                    <li>店舗名が入ります</li>
+                                    <li>名古屋店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             愛知県○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>豊田店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             愛知県○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>岡崎店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             愛知県○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="modal_store">
+                            <div class="modal__store">
                                 <ul>
                                     <li>福岡</li>
-                                    <li>店舗名が入ります</li>
+                                    <li>福岡店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             福岡県○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li></li>
-                                    <li>店舗名が入ります</li>
+                                    <li>飯塚店</li>
                                     <li>
-                                        <div class="modal_address_top">〒999-9999<br>
+                                        <div class="modal__address">〒999-9999<br>
                                             福岡県○○○○○○○○○○○
                                         </div>
-                                        <div>https://www.aaa.com</div>
+                                        <a href="#" target="_blank">https://www.aaa.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -292,60 +300,60 @@
             </section>
         </section>
 
-        <section class="section_accordion">
-            <div class="section_title" data-aos="fade-up">
+        <section class="accordion">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Other items</h2>
                 <p>関連商品をご紹介します</p>
             </div>
 
-            <div class="accordion_container" data-aos="fade-up">
-                <div class="accordion_box">
-                    <div class="accordion_front" id="accordion_trigger">
-                        <div class="accordion_front_img"><img src="./assets/img/pc/items1.png" alt="other items画像1">
+            <div class="accordion__container" data-aos="fade-up">
+                <div class="accordion__box">
+                    <div class="accordion__front" id="accordion_trigger">
+                        <div class="accordion__front-img"><img src="./assets/img/items1.jpg" alt="other items画像1">
                         </div>
-                        <div class="accordion_front_text">
+                        <div class="accordion__front-text">
                             <h2>S.LIPS NATURAL SET</h2>
                             <p>天然素材にこだわった商品のセットです。</p>
-                            <p class="accordion_front_text_bottom">販売名：S.LIPS ナチュラル</p>
+                            <p class="accordion__front-text-bottom">販売名：S.LIPS ナチュラル</p>
                         </div>
-                        <div id="accordion_front_arrow" class="accordion_front_arrow"></div>
+                        <div id="accordion_front_arrow" class="accordion__front-arrow"></div>
                     </div>
                     <!-- アコーディオンの中身 -->
-                    <div class="accordion_wrapper" id="accordion_top">
-                        <div class="explanation_box">
-                            <div class="explanation_img"><img src="./assets/img/pc/items1.png"
+                    <div class="accordion__wrapper" id="accordion_top">
+                        <div class="accordion__item">
+                            <div class="accordion__img"><img src="./assets/img/items1.jpg"
                                     alt="other items画像1アコーディオンの画像">
                             </div>
-                            <div class="explanation">
-                                <div class="explanation_inner">
+                            <div class="accordion__item-body">
+                                <div class="item-inner">
                                     <h2>
                                         S.LIPS NATURAL SET
                                     </h2>
                                     <p>
                                         天然素材にこだわりぬいた商品のセットとなります。独自の製法により、天然成分をそのまま商品に閉じ込めました。国が定めるアレルギーテストもクリアしており、敏感肌の方にもおススメです。
                                     </p>
-                                    <div class="explanation_text">
+                                    <div class="item-text">
                                         <h3>【セット内容】</h3>
-                                        <div class="explanation_text_inner">
+                                        <div class="item-text-list">
                                             <ul>
                                                 <li>・ナチュラルリップ</li>
                                                 <li>・ナチュラルアイブロウ</li>
                                                 <li>・ナチュラルファンデーション</li>
                                             </ul>
-                                            <button class="explanation_button"><span>オンラインストアを見る</span></button>
+                                            <button class="item-button"><span>オンラインストアを見る</span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion_swiper_container">
+                        <div class="accordion__swiper-container">
                             <h2>お客様の声</h2>
                             <div class="swiper-container-parent">
                                 <div class="swiper swiper1" id="accordion-swiper-1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>お気に入りです</h3>
                                                 <p>
@@ -355,7 +363,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>プレゼント用に購入</h3>
                                                 <p>
@@ -365,7 +373,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>使い心地がいい</h3>
                                                 <p>
@@ -375,7 +383,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>次も買います</h3>
                                                 <p>
@@ -390,58 +398,59 @@
                                 <div class="swiper-button-next next1"></div>
                             </div>
                         </div>
-                        <div class="Close_button_wrapper">
-                            <div id="Close_button" class="Close_button">閉じる</div>
+                        <div class="Close-button-wrapper">
+                            <div id="Close_button" class="Close-button">閉じる</div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion_box">
-                    <div class="accordion_front" id="accordion_trigger2">
-                        <div class="accordion_front_img"><img src="./assets/img/pc/items2.png" alt="other items画像2">
+
+                <div class="accordion__box">
+                    <div class="accordion__front" id="accordion_trigger2">
+                        <div class="accordion__front-img"><img src="./assets/img/items2.jpg" alt="other items画像2">
                         </div>
-                        <div class="accordion_front_text">
+                        <div class="accordion__front-text">
                             <h2>S.LIPS MOISTURE SET</h2>
                             <p>潤いにこだわった商品のセットです。</p>
-                            <p class="accordion_front_text_bottom">販売名：S.LIPS モイスチャー</p>
+                            <p class="accordion__front-text-bottom">販売名：S.LIPS モイスチャー</p>
                         </div>
-                        <div id="accordion_front_arrow2" class="accordion_front_arrow"></div>
+                        <div id="accordion_front_arrow2" class="accordion__front-arrow"></div>
                     </div>
                     <!-- アコーディオンの中身 -->
-                    <div class="accordion_wrapper" id="accordion_middle">
-                        <div class="explanation_box">
-                            <div class="explanation_img"><img src="./assets/img/pc/items2.png"
+                    <div class="accordion__wrapper" id="accordion_middle">
+                        <div class="accordion__item">
+                            <div class="accordion__img"><img src="./assets/img/items2.jpg"
                                     alt="other items画像2アコーディオンの画像">
                             </div>
-                            <div class="explanation">
-                                <div class="explanation_inner">
+                            <div class="accordion__item-body">
+                                <div class="item-inner">
                                     <h2>
                                         S.LIPS MOISTURE SET
                                     </h2>
                                     <p>
                                         潤いにこだわった商品を集めました。独自の製法と天然成分のバランスにより、長時間の潤いをキープ。また、天然成分に含まれるミネラルの働きにより、本来持つお肌の回復力と保湿力もサポートします。
                                     </p>
-                                    <div class="explanation_text">
+                                    <div class="item-text">
                                         <h3>【セット内容】</h3>
-                                        <div class="explanation_text_inner">
+                                        <div class="item-text-list">
                                             <ul>
                                                 <li>・モイスチャー乳液</li>
                                                 <li>・モイスチャー化粧水</li>
                                                 <li>・モイスチャークリーム</li>
                                             </ul>
-                                            <button class="explanation_button"><span>オンラインストアを見る</span></button>
+                                            <button class="item-button"><span>オンラインストアを見る</span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion_swiper_container">
+                        <div class="accordion__swiper-container">
                             <h2>お客様の声</h2>
                             <div class="swiper-container-parent">
                                 <div class="swiper swiper2" id="accordion-swiper-2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>潤いがすごい</h3>
                                                 <p>
@@ -451,7 +460,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>リピートします</h3>
                                                 <p>
@@ -461,7 +470,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>香りがいい</h3>
                                                 <p>
@@ -471,7 +480,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>毎日使ってます</h3>
                                                 <p>
@@ -486,58 +495,59 @@
                                 <div class="swiper-button-next next2"></div>
                             </div>
                         </div>
-                        <div class="Close_button_wrapper">
-                            <div id="Close_button2" class="Close_button">閉じる</div>
+                        <div class="Close-button-wrapper">
+                            <div id="Close_button2" class="Close-button">閉じる</div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion_box">
-                    <div class="accordion_front" id="accordion_trigger3">
-                        <div class="accordion_front_img"><img src="./assets/img/pc/items3.png" alt="other items画像3">
+
+                <div class="accordion__box">
+                    <div class="accordion__front" id="accordion_trigger3">
+                        <div class="accordion__front-img"><img src="./assets/img/items3.jpg" alt="other items画像3">
                         </div>
-                        <div class="accordion_front_text">
+                        <div class="accordion__front-text">
                             <h2>S.LIPS A LA CARTE</h2>
                             <p>人気商品をひとまとめに。</p>
-                            <p class="accordion_front_text_bottom">販売名：S.LIPS アラカルト</p>
+                            <p class="accordion__front-text-bottom">販売名：S.LIPS アラカルト</p>
                         </div>
-                        <div id="accordion_front_arrow3" class="accordion_front_arrow"></div>
+                        <div id="accordion_front_arrow3" class="accordion__front-arrow"></div>
                     </div>
                     <!-- アコーディオンの中身 -->
-                    <div class="accordion_wrapper" id="accordion_bottom">
-                        <div class="explanation_box">
-                            <div class="explanation_img"><img src="./assets/img/pc/items3.png"
+                    <div class="accordion__wrapper" id="accordion_bottom">
+                        <div class="accordion__item">
+                            <div class="accordion__img"><img src="./assets/img/items3.jpg"
                                     alt="other items画像3アコーディオンの画像">
                             </div>
-                            <div class="explanation">
-                                <div class="explanation_inner">
+                            <div class="accordion__item-body">
+                                <div class="item-inner">
                                     <h2>
                                         S.LIPS A LA CARTE
                                     </h2>
                                     <p>
                                         人気の商品を、ひとつにまとめたお得なセット。普段使いにも、その他様々なシーンでも活躍します。もちろん天然成分配合です。
                                     </p>
-                                    <div class="explanation_text">
+                                    <div class="item-text">
                                         <h3>【セット内容】</h3>
-                                        <div class="explanation_text_inner">
+                                        <div class="item-text-list">
                                             <ul>
                                                 <li>・S.LIPSカラー３本セット</li>
                                                 <li>・S.LIPSメイクアップセット</li>
                                                 <li>・S.LIPSファンデーションセット</li>
                                             </ul>
-                                            <button class="explanation_button"><span>オンラインストアを見る</span></button>
+                                            <button class="item-button"><span>オンラインストアを見る</span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion_swiper_container">
+                        <div class="accordion__swiper-container">
                             <h2>お客様の声</h2>
                             <div class="swiper-container-parent">
                                 <div class="swiper swiper2" id="accordion-swiper-3">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>初めての購入</h3>
                                                 <p>
@@ -547,7 +557,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>友人へのプレゼントに</h3>
                                                 <p>
@@ -557,7 +567,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>バリエーションが豊富</h3>
                                                 <p>
@@ -567,7 +577,7 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="accordion_thoughts">
+                                            <div class="accordion__thoughts">
                                                 <div class="top-brackets"></div>
                                                 <h3>喜ばれました</h3>
                                                 <p>
@@ -582,8 +592,8 @@
                                 <div class="swiper-button-next next3"></div>
                             </div>
                         </div>
-                        <div class="Close_button_wrapper">
-                            <div id="Close_button3" class="Close_button">閉じる</div>
+                        <div class="Close-button-wrapper">
+                            <div id="Close_button3" class="Close-button">閉じる</div>
                         </div>
                     </div>
                 </div>
@@ -591,14 +601,14 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer_inner">
-            <div class="footer_title_box">
-                <h2 class="footer_title"><a href="./index.html"><img src="./assets/img/pc/logo.svg" alt="フッターのロゴ"></a>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__title-box">
+                <h2 class="footer__title"><a href="./index.html"><img src="./assets/img/logo.svg" alt="フッターのロゴ"></a>
                 </h2>
                 <div class="copyright">Copyright © S LIPS. ALL RIGHTS RESERVED.</div>
             </div>
-            <nav class="footer_nav">
+            <nav class="footer__nav">
                 <ul>
                     <li><a href="avascript:void(0)">COMPANY</a></li>
                     <li><a href="avascript:void(0)">PRIVACY POLICY</a></li>

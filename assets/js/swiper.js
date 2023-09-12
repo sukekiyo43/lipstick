@@ -8,21 +8,6 @@ const swiper = new Swiper("#header_swiper", {
     },
 });
 
-// Color variationsのスワイパー
-// const swiper2 = new Swiper("#variations_swiper", {
-//     effect: "coverflow",
-//     speed: '.8s',
-//     centeredSlides: true,
-//     loop: true,
-//     loopAdditionalSlides: 3,
-//     slidesPerView: 1.9,
-//     spaceBetween: 4 + "%",
-//     pagination: {
-//         el: ".swiper-pagination_variations",
-//         clickable: true,
-//     },
-// });
-// Color variationsのスワイパー
 const swiper2 = new Swiper("#variations_swiper", {
     effect: "coverflow",
     speed: '.8s',
@@ -32,7 +17,7 @@ const swiper2 = new Swiper("#variations_swiper", {
     slidesPerView: 1.7,
     spaceBetween: 4 + "%",
     pagination: {
-        el: ".swiper-pagination_variations",
+        el: ".swiper-pagination-variations",
         clickable: true,
     },
     breakpoints: {

@@ -191,27 +191,26 @@ a:hover {
 
 /*------------------- ヘッダーＰＣ -----------------------*/
 
-header {
+.header {
     width: 100%;
     padding-bottom: 123px;
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(254, 229, 229, 1) 50%, rgba(255, 254, 254, 1));
 }
 
-.header_mv {
+.header__mv {
     width: 73.36%;
     max-height: 600px;
-    min-height: 380px;
-    aspect-ratio: 1100/600;
+    height: 600px;
 }
 
-.header_mv-pc-box {
+.header__mv-box {
     position: relative;
     height: 100%;
 }
 
-.header_mv_pc1,
-.header_mv_pc2,
-.header_mv_pc3 {
+.header__mv1,
+.header__mv2,
+.header__mv3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -220,11 +219,11 @@ header {
     animation-delay: 0s;
 }
 
-.header_mv_pc2 {
+.header__mv2 {
     animation-delay: 8.5s;
 }
 
-.header_mv_pc3 {
+.header__mv3 {
     animation-delay: 16s;
 }
 
@@ -250,11 +249,11 @@ header {
     }
 }
 
-.header_mv img {
+.header__mv img {
     object-fit: cover;
 }
 
-.header_inner {
+.header__inner {
     position: absolute;
     width: 100%;
     max-width: 1500px;
@@ -266,14 +265,14 @@ header {
     margin: 0 auto;
 }
 
-.header_logo_box {
+.header__logo-box {
     position: absolute;
     width: 480px;
     right: 0;
     top: 4vh;
 }
 
-.logo {
+.header__logo {
     width: 100px;
     margin: 0 auto 15px;
     filter: drop-shadow(0px 0px 2px #FFFFFF) drop-shadow(0px 0px 2px #FFFFFF);
@@ -314,11 +313,11 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     transition: all .5s;
 }
 
-.header_title_container {
+.header__title-container {
     padding: 0 24px;
 }
 
-.header_title_box {
+.header__title-box {
     width: 100%;
     max-width: 980px;
     height: 410px;
@@ -326,24 +325,24 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     background-color: rgba(255, 255, 255, .8);
 }
 
-.header_title_inner {
+.header__title-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    background-image: url(../img/pc/box-bg.png);
+    background-image: url(../img/box-bg.jpg);
     background-position: center;
     filter: grayscale(50%);
 }
 
-.header_title_inner h2 {
+.header__title-inner h2 {
     font-size: 2rem;
     font-family: '游明朝', 'Yu Mincho', YuMincho, serif, sans-serif;
     margin-top: 83px;
     margin-bottom: 49px;
 }
 
-.header_title_inner p {
+.header__title-inner p {
     text-align: center;
     font-size: .9375rem;
     line-height: 29.8px;
@@ -353,7 +352,7 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
 
 /*------------------- ページトップに戻るボタン -----------------------*/
 
-.return_circle {
+.return-circle {
     position: fixed;
     right: 30px;
     bottom: 30px;
@@ -363,309 +362,101 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     z-index: 15;
     overflow: hidden;
     cursor: pointer;
-    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .5));
     opacity: 1;
     transition: all .5s;
 }
 
-#body .return_circle.open {
+#body .return-circle.open {
     opacity: 0;
     transition: all .5s;
 }
 
-.return_circle a {
+.return-circle a {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-image: url(../img/pc/lip-icon.svg);
+    background-image: url(../img/return-circle.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: rgba(255, 255, 255, .8);
 }
 
-.return_circle a:hover {
+.return-circle a:hover {
     opacity: 1;
 }
 
 /*------------------- メインコンテンツＰＣ -----------------------*/
+/*------------------- メインコンテンツ共通 -----------------------*/
 
-main {
+.main {
     overflow: hidden;
 }
 
-/*------ メインコンテンツトップＫＶＰＣ -------*/
 
-.section_kv {
-    margin-bottom: 8%;
-}
-
-.kv {
-    width: 100%;
-    height: 400px;
-}
-
-.kv img {
-    object-fit: cover;
-}
-
-/*------ 天然素材のセクションＰＣ -------*/
-
-.section_natural {
-    margin-bottom: 120px;
-    margin-bottom: 8%;
-}
-
-.section_color {
-    margin-bottom: 19.5%;
-}
-
-.natural_title,
-.color_title {
-    position: relative;
-}
-
-.natural_title h2,
-.color_title h2 {
-    width: fit-content;
-    font-size: 3.125rem;
-    color: #FFFFFF;
-    font-weight: bold;
-    line-height: 60px;
-    padding: 0 16px;
-    background-image: linear-gradient(90deg, rgb(253 171 128 / 80%),
-            rgb(231 39 0));
-}
-
-.color_title h2 {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.natural_title_top,
-.color_title_top {
-    margin-bottom: 8px;
-}
-
-.natural_img,
-.color_img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 70%;
-    min-width: 670px;
-    height: 480px;
-    margin-top: 32px;
-}
-
-.natural_img_pc,
-.color_img_pc {
-    object-fit: cover;
-}
-
-.color_img {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.hundred_img,
-.manual_img,
-.transparent_img,
-.december_img,
-.three-colors_img,
-.exclusive_img {
-    position: absolute;
-    content: '';
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 15.334vw;
-    max-width: 230px;
-    min-width: 155px;
-    aspect-ratio: 230/230;
-}
-
-.hundred_img {
-    top: calc(-21% + 1px);
-    right: calc(-8% + 1px);
-}
-
-.manual_img {
-    top: 32%;
-    left: calc(-2% + -1px);
-}
-
-.transparent_img {
-    top: calc(76% + 3px);
-    right: calc(15% + 3px);
-}
-
-.december_img {
-    top: calc(-10% + 1px);
-    left: calc(-11% + 2px);
-}
-
-.three-colors_img {
-    top: calc(30% + 4px);
-    right: calc(-2% + -1px);
-}
-
-.exclusive_img {
-    top: calc(83% + 5px);
-    left: calc(23% + 4px);
-}
-
-/*------ Color variationsＰＣ -------*/
-
-.section_variations {
-    padding: 0 24px;
-    padding-bottom: 214px;
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(232, 232, 232, 1) 50%, rgba(255, 254, 254, 1));
-}
-
-.section_title {
+.section-title {
     text-align: center;
-    margin: 0 auto 70px;
+    margin: 0 auto 30px;
 }
 
-.section_title h2 {
+.section-title h2 {
     width: fit-content;
     font-size: 3.125rem;
     letter-spacing: 0.3rem;
     margin: 0 auto 22px;
 }
 
-.section_title p {
+.section-title p {
     width: fit-content;
     font-size: 1.125rem;
     font-family: '游明朝', 'Yu Mincho', YuMincho, serif, sans-serif;
     margin: 0 auto;
 }
 
-.section_variations .swiper-container-parent {
-    display: block;
-    position: relative;
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto 120px;
-}
 
-.section_variations .swiper-container-parent .swiper-pagination-bullets {
-    width: fit-content;
-    margin: 30px auto 0;
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(n) {
-    width: 35px;
-    height: 35px;
-    margin-right: 12px;
-    transition: all .5s;
-    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 1));
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullet {
-    opacity: 1;
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(1) {
-    background-color: #d14f55;
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(2) {
-    background-color: #b78778;
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(3) {
-    background-color: #b68eb9;
-}
-
-.section_variations .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bullet-active {
-    transform: scale(1.2);
-    transition: all .5s;
-}
-
-.variations_img_box {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-top: 4%;
-    padding-left: 4%;
-}
-
-.section_color {
-    margin-bottom: 220px;
-}
-
-.explanation_box {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto 119px;
-}
-
-.explanation {
-    max-width: 680px;
-    padding: 5% 6% 5% 12%;
-    background-color: #FFFFFF;
-    border: solid 1px #707070;
-}
-
-.explanation_img {
-    width: 50%;
-    max-width: 360px;
-    aspect-ratio: 360/240;
-    margin-right: -60px;
-    z-index: 10;
-}
-
-.explanation_img img {
-    border: solid 2px #FFFFFF;
-}
-
-.explanation_inner {
+.item-inner {
     width: 100%;
     max-width: 510px;
     min-height: 252px;
 }
 
-.explanation_inner h2 {
+.item-inner h2 {
     font-size: 1.125rem;
     margin-bottom: 28px;
     font-weight: bold;
     letter-spacing: .45px;
 }
 
-.explanation_inner p {
+.item-inner p {
     line-height: 24px;
     max-width: 500px;
     margin-bottom: 24px;
 }
 
-.explanation_text {
+.item-text {
     font-size: .875rem;
     color: #707070;
     line-height: 20px;
 }
 
-.explanation_text h3 {
+.item-text h3 {
     margin-bottom: 4px;
 }
 
-.explanation_text_inner {
+.item-text-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 111px;
 }
 
-.explanation_text_inner ul {
+.item-text-list ul {
     margin-right: 20px;
     margin-bottom: 24px;
 }
 
-.explanation_button {
+.item-button {
     position: relative;
     display: block;
     width: 229px;
@@ -683,33 +474,247 @@ main {
     transition: all .3s;
 }
 
-.explanation_button:hover {
+.item-button:hover {
     background-color: #FFC0CB;
     transition: all .3s;
 }
 
-.explanation_button span {
+.item-button span {
     display: block;
     position: relative;
     width: 100%;
     text-align: center;
 }
 
-.explanation_button span::after {
+.item-button span::after {
     position: absolute;
     content: '';
     top: 19px;
     right: -11px;
     width: 17px;
     height: 13px;
-    background-image: url(../img/pc/icon-link-w.svg);
+    background-image: url(../img/icon-link-w.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+/*------ メインコンテンツトップＫＶＰＣ -------*/
+
+.kv {
+    margin-bottom: 8%;
+}
+
+.kv__img-box {
+    width: 100%;
+    height: 400px;
+}
+
+.kv__img {
+    object-fit: cover;
+}
+
+/*------ 天然素材のセクションＰＣ -------*/
+
+.natural {
+    margin-bottom: 120px;
+    margin-bottom: 8%;
+}
+
+.color {
+    margin-bottom: 19.5%;
+}
+
+.natural__title,
+.color__title {
+    position: relative;
+}
+
+.natural__title h2,
+.color__title h2 {
+    display: inline;
+    width: fit-content;
+    font-size: 3.125rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.natural__title h2 span,
+.color__title h2 span {
+    padding: 10px;
+    display: block;
+    width: fit-content;
+    background-image: linear-gradient(90deg, rgb(253 171 128 / 80%),
+            rgb(231 39 0));
+    margin-bottom: 10px;
+}
+
+.color__title h2 span {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.natural__img-box,
+.color__img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    min-width: 670px;
+    height: 480px;
+    margin-top: 32px;
+}
+
+.natural__img-pc,
+.color__img-pc {
+    object-fit: cover;
+}
+
+.color__img-box {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.natural__img-hundred,
+.natural__img-manual,
+.natural__img-transparent,
+.color__img-december,
+.color__img-three,
+.color__img-exclusive {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15.334vw;
+    max-width: 230px;
+    min-width: 155px;
+    aspect-ratio: 230/230;
+}
+
+.natural__img-hundred {
+    top: calc(-21% + 1px);
+    right: calc(-8% + 1px);
+}
+
+.natural__img-manual {
+    top: 32%;
+    left: calc(-2% + -1px);
+}
+
+.natural__img-transparent {
+    top: calc(76% + 3px);
+    right: calc(15% + 3px);
+}
+
+.color__img-december {
+    top: calc(-10% + 1px);
+    left: calc(-11% + 2px);
+}
+
+.color__img-three {
+    top: calc(30% + 4px);
+    right: calc(-2% + -1px);
+}
+
+.color__img-exclusive {
+    top: calc(83% + 5px);
+    left: calc(23% + 4px);
+}
+
+/*------ Color variationsＰＣ -------*/
+
+.variations {
+    padding: 0 24px;
+    padding-bottom: 214px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(232, 232, 232, 1) 50%, rgba(255, 254, 254, 1));
+}
+
+.variations .swiper-container-parent {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto 120px;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets {
+    width: fit-content;
+    margin: 30px auto 0;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(n) {
+    width: 35px;
+    height: 35px;
+    margin-right: 12px;
+    transition: all .5s;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 1));
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullet {
+    opacity: 1;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(1) {
+    background-color: #d14f55;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(2) {
+    background-color: #b78778;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(3) {
+    background-color: #b68eb9;
+}
+
+.variations .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.variations__img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+
+.color {
+    margin-bottom: 220px;
+}
+
+.explanation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto 119px;
+}
+
+.explanation__body {
+    max-width: 680px;
+    padding: 5% 6% 5% 12%;
+    background-color: #FFFFFF;
+    border: solid 1px #707070;
+}
+
+.explanation__img {
+    width: 50%;
+    max-width: 360px;
+    aspect-ratio: 360/240;
+    margin-right: -60px;
+    z-index: 10;
+}
+
+.explanation__img img {
+    border: solid 2px #FFFFFF;
+}
+
 /* 取扱店舗を見るＰＣ */
 
-.handling_stores_button {
+.handling-stores-button {
     position: relative;
     display: block;
     width: 600px;
@@ -723,26 +728,26 @@ main {
     cursor: pointer;
 }
 
-.handling_stores_button_cross {
+.handling-stores-button__cross {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 37px;
     right: 39px;
-    background-image: url(../img/pc/cross.svg);
+    background-image: url(../img/cross.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     transition: all 1s;
 }
 
-.handling_stores_button_cross.open {
+.handling-stores-button__cross.open {
     transform: scale(1.33) rotate(45deg);
     transition: all 1s;
 }
 
 /* 取扱店舗一覧モーダルウィンドウＰＣ */
 
-.section_modal_store {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -756,14 +761,14 @@ main {
     transition: all .5s;
 }
 
-.section_modal_store.open {
+.modal.open {
     overflow-y: scroll;
     visibility: visible;
     opacity: 1;
     transition: all .5s;
 }
 
-.modal_container {
+.modal__store-container {
     position: relative;
     width: 100%;
     max-width: 860px;
@@ -772,13 +777,13 @@ main {
     background-color: #FFFFFF;
 }
 
-.modal_store_cross {
+.modal__cross {
     position: absolute;
     width: 34px;
     height: 34px;
     top: 20px;
     right: 20px;
-    background-image: url(../img/pc/oblique-cross.svg);
+    background-image: url(../img/oblique-cross.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     transition: all 1s;
@@ -787,12 +792,12 @@ main {
     cursor: pointer;
 }
 
-.modal_store_cross.open {
+.modal__cross.open {
     transform: initial;
     transition: all 1s;
 }
 
-.modal_store_inner {
+.modal__store-inner {
     width: 100%;
     max-width: 600px;
     padding-top: 96px;
@@ -800,7 +805,7 @@ main {
     margin: 0 auto;
 }
 
-.modal_store_title {
+.modal__store-title {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -811,71 +816,71 @@ main {
     background-color: #454545;
 }
 
-.modal_store {
+.modal__store {
     font-size: .875rem;
     border-bottom: solid 1px #707070;
 }
 
-.modal_store:last-child {
+.modal__store:last-child {
     border-bottom: none;
 }
 
-.modal_store ul {
+.modal__store ul {
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.modal_store ul:last-child {
+.modal__store ul:last-child {
     margin-bottom: 39px;
 }
 
-.modal_store ul li {
+.modal__store ul li {
     line-height: 20px;
     padding-right: 15px;
 }
 
-.modal_store ul li:nth-child(1) {
+.modal__store ul li:nth-child(1) {
     width: 20%;
 }
 
-.modal_store ul li:nth-child(2) {
+.modal__store ul li:nth-child(2) {
     width: 32%;
 }
 
-.modal_store ul li:nth-child(3) {
+.modal__store ul li:nth-child(3) {
     width: 48%;
 }
 
-.modal_address_top {
+.modal__address {
     margin-bottom: 16px;
 }
 
 /*------ Other itemsＰＣ -------*/
 
-.section_accordion {
+.accordion {
     padding: 0 24px;
     padding-bottom: 195px;
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(254, 229, 229, 1) 50%, rgba(255, 254, 254, 1));
 }
 
-.section_accordion .section_title {
+.accordion .section-title {
     margin: 0 auto 79px;
 }
 
-.accordion_container {
+.accordion__container {
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
 }
 
-.accordion_box {
+.accordion__box {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
     margin-bottom: 4px;
     background-color: #FFFFFF;
 }
 
-.accordion_front {
+.accordion__front {
     position: relative;
     display: flex;
     width: 100%;
@@ -884,11 +889,11 @@ main {
     cursor: pointer;
 }
 
-.Close_button_wrapper {
+.Close-button-wrapper {
     padding-bottom: 32px;
 }
 
-.Close_button {
+.Close-button {
     position: relative;
     width: fit-content;
     text-align: end;
@@ -903,7 +908,7 @@ main {
 #accordion_front_arrow,
 #accordion_front_arrow2,
 #accordion_front_arrow3,
-.Close_button::after {
+.Close-button::after {
     position: absolute;
     content: '';
     top: 75px;
@@ -924,7 +929,7 @@ main {
     transition: all .7s;
 }
 
-.Close_button::after {
+.Close-button::after {
     top: 5px;
     right: 2px;
     width: 8px;
@@ -932,13 +937,13 @@ main {
     transform: rotate(-135deg);
 }
 
-.accordion_front_img {
+.accordion__front-img {
     width: 160px;
     height: 120px;
     margin-right: 11.481%;
 }
 
-.accordion_front_text h2 {
+.accordion__front-text h2 {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -946,7 +951,7 @@ main {
     margin-bottom: 17px;
 }
 
-.accordion_front_text_bottom {
+.accordion__front-text-bottom {
     margin-top: 11px;
     font-size: .875rem;
     color: #707070;
@@ -954,7 +959,7 @@ main {
 
 /* アコーディオンの中身商品説明ＰＣ */
 
-.accordion_wrapper {
+.accordion__wrapper {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -963,7 +968,7 @@ main {
     transition: all 1s;
 }
 
-.accordion_wrapper.open {
+.accordion__wrapper.open {
     transform: translateY(0px);
     max-height: 5000px;
     overflow: visible;
@@ -971,41 +976,34 @@ main {
     transition: all 1s;
 }
 
-.accordion_wrapper .explanation_box {
+.accordion__item {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 720px;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin: 50px auto 80px;
 }
 
-.accordion_wrapper .explanation {
+.accordion__item-body {
     max-width: 100%;
     padding: 90px 42px 35px;
+    background-color: #FFFFFF;
+    border: solid 1px #707070;
 }
 
-.accordion_wrapper .explanation_img {
+.accordion__img {
     width: 100%;
     margin-right: 0;
     margin-bottom: -60px;
-}
-
-.accordion_wrapper .explanation_inner {
-    width: 100%;
-    max-width: 100%;
-}
-
-.accordion_wrapper .explanation_inner h2 {
-    letter-spacing: .3px;
-}
-
-.accordion_wrapper .explanation_inner p {
-    max-width: 100%;
+    max-width: 360px;
+    aspect-ratio: 360/240;
+    z-index: 10;
 }
 
 /* アコーディオンのスワイパーＰＣ */
 
-.accordion_swiper_container {
+.accordion__swiper-container {
     position: relative;
     width: 100%;
     max-width: 720px;
@@ -1013,7 +1011,7 @@ main {
     margin: 0 auto;
 }
 
-.accordion_swiper_container h2 {
+.accordion__swiper-container h2 {
     font-size: 1.125rem;
     font-weight: bold;
     text-align: center;
@@ -1027,7 +1025,7 @@ main {
     height: auto;
 }
 
-.accordion_thoughts {
+.accordion__thoughts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1035,7 +1033,7 @@ main {
     height: 100%;
 }
 
-.accordion_thoughts h3 {
+.accordion__thoughts h3 {
     font-weight: bold;
     text-align: center;
     padding: 0 24px;
@@ -1043,7 +1041,7 @@ main {
     margin-bottom: 27px;
 }
 
-.accordion_thoughts p {
+.accordion__thoughts p {
     width: 100%;
     font-size: .875rem;
     line-height: 22.4px;
@@ -1101,14 +1099,14 @@ main {
 
 /*------ フッターＰＣ -------*/
 
-footer {
+.footer {
     width: 100%;
     height: 170px;
     padding: 0 24px;
     border-top: 1px solid #CCCCCC;
 }
 
-.footer_inner {
+.footer__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1118,7 +1116,7 @@ footer {
     margin: 0 auto;
 }
 
-.footer_title {
+.footer__title {
     width: 90px;
     height: 25px;
     margin-bottom: 20px;
@@ -1129,20 +1127,20 @@ footer {
     letter-spacing: -0.05px;
 }
 
-.footer_nav {
+.footer__nav {
     margin-top: 4px;
 
 }
 
-.footer_nav ul {
+.footer__nav ul {
     display: flex;
 }
 
-.footer_nav ul li {
+.footer__nav ul li {
     font-size: .875rem;
 }
 
-.footer_nav ul li:first-child {
+.footer__nav ul li:first-child {
     margin-right: 24px;
 }
 
