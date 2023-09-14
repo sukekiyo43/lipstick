@@ -394,7 +394,6 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     overflow: hidden;
 }
 
-
 .section-title {
     text-align: center;
     margin: 0 auto 30px;
@@ -565,8 +564,10 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     margin-top: 32px;
 }
 
-.natural__img-pc,
-.color__img-pc {
+.natural__img,
+.color__img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -825,6 +826,10 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     border-bottom: none;
 }
 
+.modal__sp-title {
+    display: none;
+}
+
 .modal__store ul {
     display: flex;
     margin-top: 40px;
@@ -854,6 +859,10 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
 
 .modal__address {
     margin-bottom: 16px;
+}
+
+.modal__address-link {
+    word-break: break-all;
 }
 
 /*------ Other itemsＰＣ -------*/
@@ -1129,7 +1138,6 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
 
 .footer__nav {
     margin-top: 4px;
-
 }
 
 .footer__nav ul {
@@ -1145,14 +1153,21 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
 }
 
 @media screen and (max-width: 768px) {
+    /*------------------- 共通の設定ＳＰ -----------------------*/
+
+    .accordion .swiper-container-parent .swiper-pagination-bullets span:nth-child(n),
+    .variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(n) {
+        width: 30px;
+        height: 30px;
+    }
 
     /*------------------- ヘッダーＳＰ -----------------------*/
 
-    header {
+    .header {
         padding-bottom: 80px;
     }
 
-    .header_mv {
+    .header__mv {
         width: 100%;
         max-height: 320px;
         min-height: 320px;
@@ -1160,21 +1175,21 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
         margin-bottom: 24px;
     }
 
-    .header_inner {
+    .header__inner {
         position: initial;
         transform: initial;
         aspect-ratio: initial;
         padding: 0 24px;
     }
 
-    .header_logo_box {
+    .header__logo-box {
         position: initial;
         width: 100%;
         max-width: 480px;
         margin: 0 auto;
     }
 
-    .logo {
+    .header__logo {
         position: absolute;
         top: 0;
         left: 50%;
@@ -1182,233 +1197,307 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
         margin: 24px 0 0;
     }
 
-    header .swiper-container-parent .swiper-pagination-bullets {
+    .header .swiper-container-parent .swiper-pagination-bullets {
         position: initial;
         margin: 16px auto 0;
         padding-left: 8px;
     }
 
-    .header_title_box {
+    .header__title-box {
         margin-top: 78px;
         height: auto;
-        min-height: 410px;
     }
 
-    .header_title_inner {
-        min-height: 410px;
+    .header__title-inner {
         background-size: cover;
+        padding: 50px 5px;
     }
 
-    .header_title_inner h2 {
-        width: 144px;
+    .header__title-inner h2 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: clamp(1.375rem, 1.2857rem + 0.4464vw, 1.5rem);
         line-height: 39px;
-        margin-top: 50px;
-        margin-bottom: 41px;
+        margin-top: 0;
+        margin-bottom: clamp(1.875rem, 1.4286rem + 2.2321vw, 2.5rem);
     }
 
-    .header_title_inner p {
+    .header__title-inner p {
         font-size: .875rem;
         line-height: 28px;
         padding: 0 10px;
+        margin-bottom: 0;
     }
 
+    /*------------------- ページトップに戻るボタン -----------------------*/
+
+    .return-circle {
+        right: 10px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
 
     /*------------------- メインコンテンツＳＰ -----------------------*/
+    /*------------------- メインコンテンツ共通ＳＰ -----------------------*/
+
+    .main {
+        overflow: hidden;
+    }
+
+    .section-title {
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .section-title h2 {
+        letter-spacing: 2.45px;
+        font-size: clamp(1.75rem, 0.7679rem + 4.9107vw, 3.125rem);
+        margin-bottom: 14px;
+    }
+
+    .section-title p {
+        font-size: clamp(0.875rem, 0.6964rem + 0.8929vw, 1.125rem);
+    }
+
+    .item-inner {
+        max-width: 490px;
+        margin: 0 auto;
+    }
+
+    .item-inner h2 {
+        font-size: 1rem;
+        letter-spacing: .3px;
+    }
+
+    .item-inner p {
+        line-height: 20px;
+        font-size: .875rem;
+    }
+
+    .item-text-list {
+        display: block;
+    }
+
+    .item-button {
+        width: 100%;
+        max-width: 302px;
+        margin: 0 auto;
+    }
+
+    .item-button span {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .item-button span::after {
+        top: 19px;
+        right: -30px;
+    }
 
     /*------ メインコンテンツトップＫＶＳＰ -------*/
 
-    .section_kv {
+    .kv {
         margin-bottom: 20.5%;
     }
 
     /*------ 天然素材のセクションＳＰ -------*/
 
-    .section_natural {
+    .natural {
         margin-bottom: 20.5%;
     }
 
-    .section_color {
+    .color {
         margin-bottom: 37.3%;
     }
 
-    .natural_title h2,
-    .color_title h2 {
+    .natural__title h2,
+    .color__title h2 {
         font-size: 6.15384vw;
         line-height: 8.97435vw;
     }
 
-    .natural_img,
-    .color_img {
+    .natural__title h2 span,
+    .color__title h2 span {
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+
+    .natural__img-box,
+    .color__img-box {
         width: 100%;
         min-width: initial;
         height: 450px;
         min-height: initial;
-        aspect-ratio: 390/450;
     }
 
-    .hundred_img,
-    .manual_img,
-    .transparent_img,
-    .december_img,
-    .three-colors_img,
-    .exclusive_img {
+    .natural__img-hundred,
+    .natural__img-manual,
+    .natural__img-transparent,
+    .color__img-december,
+    .color__img-three-colors,
+    .color__img-exclusive {
         width: 136px;
         min-width: initial;
         height: 136px;
     }
 
-    .hundred_img {
+    .natural__img-hundred {
         top: calc(-12% + 0px);
         right: calc(5% + 1px);
     }
 
-    .manual_img {
+    .natural__img-manual {
         top: calc(37% + 1px);
         left: calc(-2% + -2px);
     }
 
-    .transparent_img {
+    .natural__img-transparent {
         right: calc(20% + 3px);
         bottom: calc(-8% + 1px);
     }
 
-    .december_img {
+    .color__img-december {
         top: calc(-6% + 1px);
         left: calc(4% + 2px);
     }
 
-    .three-colors_img {
+    .color__img-three-colors {
         top: calc(37% + 3px);
         right: calc(-2% + 2px);
     }
 
-    .exclusive_img {
+    .color__img-exclusive {
         left: calc(40% + 8px);
         bottom: calc(-16% + 3px);
     }
 
     /*------ Color variationsＳＰ -------*/
 
-    .section_variations {
+    .variations {
         padding-bottom: 85px;
     }
 
-    .section_variations .section_title {
-        margin-bottom: 42px;
-    }
-
-    .section_title h2 {
-        letter-spacing: 2.45px;
-        font-size: calc(31px + 19 * (100vw - 550px)/218);
-        margin-bottom: 14px;
-    }
-
-    .section_title p {
-        font-size: .9375rem;
-    }
-
-    .section_variations .swiper-container-parent {
+    .variations .swiper-container-parent {
         margin-bottom: 85px;
     }
 
-    .explanation_box {
+    .explanation {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 40px;
     }
 
-    .explanation {
+    .explanation__body {
         width: 100%;
         max-width: 600px;
         padding: 85px 15px 35px;
     }
 
-    .explanation_img {
+    .explanation__img {
         width: 80%;
         margin-right: 0;
         margin-bottom: -60px;
     }
 
-    .explanation_img img {
+    .explanation__img img {
         object-fit: cover;
     }
 
-    .explanation_inner h2 {
+    .handling-stores-button {
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+    }
+
+    .modal {
+        padding: 0 10px;
+    }
+
+    .modal__store-title {
         font-size: 1rem;
-        letter-spacing: .3px;
     }
 
-    .explanation_inner p {
-        font-size: .875rem;
-        line-height: 20px;
-    }
-
-    .explanation_text_inner {
+    .modal__sp-title {
         display: block;
     }
 
-    .explanation_text_inner ul {
-        margin-bottom: 23px;
+    .modal__pc-title {
+        display: none;
     }
 
-    .explanation_button {
+    .modal__store+.modal__store {
+        padding-top: 40px;
+    }
+
+    .modal__store ul li:first-child {
+        display: none;
+    }
+
+    .modal__store-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal__store-container {
+        padding: 0 10px;
+    }
+
+    .modal__store {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        max-width: 302px;
-        margin: 0 auto;
     }
 
-    .explanation_button span::after {
-        top: 19px;
-        right: 25px;
-    }
-
-    .handling_stores_button {
+    .modal__store ul {
+        justify-content: center;
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
     }
 
-    .modal_store_title {
-        font-size: 1rem;
+    .modal__store ul li:nth-child(2) {
+        width: 100px;
+        min-width: 70px;
+        padding-right: 5px;
     }
 
-    .modal_store {
-        font-size: .75rem;
-        font-size: 3.07692vw;
-        font-size: clamp(10px, 3.07692vw, 14px);
+    .modal__store ul li:nth-child(3) {
+        max-width: 240px;
+        width: 100%;
+        padding-right: 5px;
     }
 
     /*------ Other itemsＳＰ -------*/
 
-    .section_accordion {
+    .accordion {
         padding-bottom: 111px;
     }
 
-    .accordion_container {
+    .accordion .section-title {
+        margin-bottom: 38px;
+    }
+
+    .accordion__container {
         max-width: 600px;
     }
 
-    .accordion_front {
+    .accordion__front {
         padding: 16px;
         padding-right: 40px;
         height: auto;
+        align-items: center;
     }
 
-    .accordion_front_img {
+    .accordion__front-img {
         width: 91px;
         min-width: 91px;
         min-height: 68px;
         height: 68px;
-        margin-top: 23px;
         margin-right: 16px;
     }
 
-    .section_accordion .section_title {
-        margin-bottom: 38px;
-    }
-
-    .accordion_front_text h2 {
+    .accordion__front-text h2 {
         font-size: 1rem;
         margin-top: 3px;
         margin-bottom: 8px;
@@ -1416,12 +1505,12 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
         line-height: 24px;
     }
 
-    .accordion_front_text p {
+    .accordion__front-text p {
         font-size: .875rem;
         line-height: 20px;
     }
 
-    .section_accordion .accordion_front_text_bottom {
+    .accordion .accordion__front-text-bottom {
         font-size: .75rem;
         line-height: 17px;
         margin-top: 4px;
@@ -1430,7 +1519,7 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
     #accordion_front_arrow,
     #accordion_front_arrow2,
     #accordion_front_arrow3,
-    .Close_button::after {
+    .Close-button::after {
         top: -6px;
         right: 5%;
         bottom: 0;
@@ -1445,45 +1534,44 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
 
     /* アコーディオンの中身商品説明ＳＰ */
 
-    .accordion_wrapper {
+    .accordion__wrapper {
         padding: 0 16px;
     }
 
-    .accordion_wrapper .explanation {
-        padding: 85px 15px 35px;
+    .accordion__item {
+        padding: 50px 0 35px;
+        margin: 0;
     }
 
-    .accordion_wrapper .explanation_img {
-        width: 80%;
+    .accordion__img {
+        width: 100%;
+        max-width: 400px;
         min-width: 130px;
+        padding: 0 30px;
     }
 
-    .accordion_wrapper .explanation_box {
-        margin-bottom: 60px;
-    }
-
-    .explanation_button span::after {
-        right: auto;
-        margin-left: 10px;
+    .accordion__item-body {
+        padding: 85px 20px 35px;
+        margin-bottom: 30px;
     }
 
     /* アコーディオンのスワイパーＳＰ */
 
-    .accordion_swiper_container {
+    .accordion__swiper-container {
         padding-bottom: 50px;
     }
 
-    .accordion_swiper_container h2 {
+    .accordion__swiper-container h2 {
         font-size: 1rem;
         margin-bottom: 30px;
     }
 
-    .accordion_thoughts h3 {
+    .accordion__thoughts h3 {
         font-size: .875rem;
         padding: 0 15px;
     }
 
-    .accordion_thoughts p {
+    .accordion__thoughts p {
         font-size: .75rem;
         padding: 0 15px;
     }
@@ -1501,53 +1589,72 @@ header .swiper-container-parent .swiper-pagination-bullets .swiper-pagination-bu
         left: -10px;
     }
 
-    .Close_button_wrapper #Close_button::after,
-    .Close_button_wrapper #Close_button2::after,
-    .Close_button_wrapper #Close_button3::after {
+    .Close-button-wrapper #Close_button::after,
+    .Close-button-wrapper #Close_button2::after,
+    .Close-button-wrapper #Close_button3::after {
         top: 8px;
     }
 
     /*------ フッターＳＰ -------*/
 
-    footer {
-        height: 231px;
+    .footer {
+        padding: 40px 20px;
+        height: auto;
     }
 
-    .footer_inner {
-        flex-direction: column-reverse;
+    .footer__inner {
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .footer_nav {
-        margin-top: 58px;
+    .footer__title-box {
+        display: contents;
     }
 
-    .footer_title a {
-        margin-left: 78px;
+    .footer__title {
+        order: 0;
+        margin-bottom: 40px;
+    }
+
+    .footer__nav {
+        order: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
     }
 
     .copyright {
-        margin-bottom: 58px;
+        order: 2;
     }
 
     /*------ ＳＰ 550px-の設定 -------*/
     @media screen and (max-width: 550px) {
 
-        header .swiper-container-parent .swiper-pagination-bullets span:nth-child(n),
-        .section_variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(n) {
+        .header .swiper-container-parent .swiper-pagination-bullets span:nth-child(n),
+        .variations .swiper-container-parent .swiper-pagination-bullets span:nth-child(n) {
             width: 30px;
             height: 30px;
-        }
-
-        .section_title h2 {
-            font-size: 1.875rem;
         }
     }
 
     /*------ ＳＰ 390px-320px の設定 -------*/
 
     @media screen and (max-width: 389px) {
-        .explanation_button span {
-            font-size: .625rem;
+
+        .accordion__front {
+            flex-direction: column;
+        }
+
+        .accordion__front-img {
+            margin: 0 auto 5px;
+        }
+
+        .accordion__front-text {
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .item-button {
+            font-size: .75rem;
         }
     }
 }
